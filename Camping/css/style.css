@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Archivo+Black|Cinzel|Julius+Sans+One|Luckiest+Guy|Monoton|Old+Standard+TT|Quicksand|Roboto&display=swap');
+
+.mian-section
+{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(../img/bg.jpg);
+	background-size: cover;
+}
+
+.bottom-line
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.border-line
+{
+	width: 98.5%;
+	height: .5px;
+	background-color: #fff;
+}
+
+nav ul li a
+{
+	font-size: 14px;
+	text-decoration: none !important;
+}
+.logo
+{
+	margin: 0;
+	padding: 0;
+}
+.logo h5
+{
+	margin: 5px 0;
+	font-size: 16px;
+	font-weight: bolder;
+}
+.button-items a,
+.button-items i
+{
+	font-size: 14px;
+}
+
+.contentBox
+{
+	position: relative;
+	width: 80%;
+	height: 555px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	float: left;
+}
+.contentBox .main-heading
+{
+	margin: 0;
+	padding-top: 100px;
+	padding-right: 200px;
+}
+
+.contentBox .main-heading h4
+{
+	color: #fff;
+	font-size: 45px;
+	font-weight: 800;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.contentBox .main-heading p
+{
+	color: #fff;
+	font-size: 16px;
+	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+}
+
+.side-info
+{
+	position: absolute;
+	right: 0;
+	width: 25%;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.side-info .heading-info
+{
+	margin-top: 80px;
+	width: 170px;
+	height: 290px;
+	background-color: rgb(255,255,255,.3);
+	color: #fff;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding: 30px;
+}
+
+.side-info .heading-info h3
+{
+	font-size: 15px;
+}
+
+.side-info .heading-info h1
+{
+	padding-top: 15px;
+	padding-bottom: 0px;
+	font-size: 25px;
+	font-weight: 800;
+}
+
+.side-info .heading-info i
+{
+	cursor: pointer;
+}
+
+.side-info .imgBox
+{
+	margin-top: 80px;
+	width: 170px;
+	height: 290px;
+}
+.side-info .imgBox img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.package-info
+{
+	position: relative;
+	width: 100%;
+	display: flex;
+	background-color: rgb(255,255,255,.3);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.package-info h6
+{
+	position: absolute;
+	margin: 20px 55px;
+	color: #fff;
+	font-size: 15px;
+	text-transform: capitalize;
+}
+
+.package-info .contentbox
+{
+	position: relative;
+	margin: 40px 30px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	height: 70px;
+}
+.package-info .contentbox .place:nth-child(1)
+{
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.package-info .contentbox .place:nth-child(2)
+{
+	width: 120px;
+}
+.package-info .contentbox .place:nth-child(3)
+
+{
+
+	width: 120px;
+}
+.package-info .contentbox .place:nth-child(4)
+{
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+.package-info .contentbox .place
+{	
+	position: relative;
+	border: 1px solid #fff;
+	padding: 2px 0px;
+	width: 300px;
+}
+.package-info .contentbox .place h2
+{
+	margin: 8px;
+	padding: 0;
+	color: #fff;
+	font-size: 11px;
+	font-weight: bolder;
+}
+
+.package-info .contentbox .place p
+{
+	padding: 0 0 5px;
+	margin: 0px;
+	color: #fff;
+	font-size: 9px;
+}
+.package-info .contentbox .place i
+{
+	padding: 10px;
+	position: relative;
+	float: left;
+	font-size: 20px;
+	color: #fff;
+}
+.btn1
+{
+	margin: 0px 10px;
+	padding: 15px 55px;
+	border-radius: 6px;
+	border: none;
+	background: green;
+	color: #fff;
+}
+@media (max-height: 1024px)
+{
+	.mian-section
+	{
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+}
+@media (max-width: 1199px)
+{
+
+	.package-info h6
+	{
+		position: absolute;
+		margin: 20px 60px;
+		color: #fff;
+		font-size: 15px;
+		text-transform: capitalize;
+	}
+
+	.package-info .contentbox .place
+	{	
+		position: relative;
+		border: 1px solid #fff;
+		padding: 2px 0px;
+		width: 200px;
+	}
+	.side-info .heading-info h1
+	{
+		padding-top: 0px;
+		padding-bottom: 0px;
+		font-size: 26px;
+		font-weight: 800;
+	}
+
+}
+
+@media (max-width: 991px)
+{
+	.main-section
+	{	
+		position: relative;
+		width: 100%;
+		height: 100vh;		
+	}
+	.package-info
+	{
+		width: 100%;
+	}
+
+	.contentBox .main-heading
+	{
+		margin: 0;
+		padding-top: 100px;
+		padding-right: 100px;
+	}
+
+	.contentBox .main-heading h4
+	{
+		color: #fff;
+		font-size: 25px;
+		font-weight: 800;
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	}
+	.contentBox .main-heading p
+	{
+		color: #fff;
+		font-size: 12px;
+	}
+	.side-info
+	{
+		position: absolute;
+		right: 0;
+		width: 40%;
+		height: 500px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	.side-info .heading-info
+	{
+		margin-top: 80px;
+		width: 200px;
+		height: 290px;
+		background-color: rgb(255,255,255,.3);
+		color: #fff;
+		padding: 30px;
+	}
+
+	.side-info .heading-info h3
+	{
+		font-size: 15px;
+	}
+
+	.side-info .heading-info h1
+	{
+		width: 80px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		font-size: 20px;
+		font-weight: 800;
+	}
+
+	.side-info .heading-info i
+	{
+		cursor: pointer;
+	}
+
+	.side-info .imgBox
+	{
+		margin-top: 80px;
+		width: 200px;
+		height: 290px;
+	}
+	.side-info .imgBox img
+	{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+
+	.package-info h6
+	{
+		position: absolute;
+		margin: 20px 35px;
+		color: #fff;
+		font-size: 15px;
+		text-transform: capitalize;
+	}
+
+	.package-info .contentbox
+	{
+		position: relative;
+		margin: 50px 30px;
+		width: 100%;
+		display: table;
+	}
+	.package-info .contentbox .place:nth-child(1),
+	.package-info .contentbox .place:nth-child(4)
+	{
+		border-radius: 0;
+	}
+	.package-info .contentbox .place:nth-child(1)
+	{
+		
+		border-top-right-radius: 6px;
+		border-top-left-radius: 6px;
+	}
+	.package-info .contentbox .place:nth-child(4)
+	{
+
+		border-bottom-right-radius: 6px;
+		border-bottom-left-radius: 6px;	
+	}
+	.package-info .contentbox .place,
+	.package-info .contentbox .place:nth-child(2),
+	.package-info .contentbox .place:nth-child(3)
+	{	
+		position: relative;
+		border: 1px solid #fff;
+		padding: 2px 0px;
+		width: 100%;
+	}
+	.btn1
+	{
+		margin: 20px 0px;
+		padding: 15px 55px;
+		width: 100%;
+		border-radius: 6px;
+		border: none;
+		background: green;
+		opacity: .6;
+		color: #fff;
+	}
+}
+
+@media (max-width: 768px)
+{
+	.contentBox
+	{
+		position: relative;
+		width: 100%;
+		height: 250px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		float: none;
+	}
+
+	.contentBox .main-heading h4
+	{
+		font-size: 35px;
+		font-weight: 800;
+	}
+	.contentBox .main-heading p
+	{
+		font-size: 15px;
+	}
+
+	.side-info
+	{
+		position: relative;
+		width: 100%;
+		height: 450px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		padding: 0;
+	}
+
+	.side-info .heading-info
+	{
+		padding: 50px;
+		margin: 0;
+		width: 50%;
+		height: 350px;
+		background-color: rgb(255,255,255,.3);
+		color: #fff;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+	.side-info .heading-info h3
+	{
+		padding-bottom: 20px;
+		font-size: 20px;
+	}
+
+	.side-info .heading-info h1
+	{
+		display: inline;
+		font-size: 30px;
+		font-weight: 800;
+	}
+
+	.side-info .heading-info i
+	{
+
+		padding-top: 20px;
+		cursor: pointer;
+	}
+
+	.side-info .imgBox
+	{
+		margin: 0;
+		width: 50%;
+		height: 350px;
+	}
+	.side-info .imgBox img
+	{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+}
+
+@media (max-width: 575px)
+{
+	.contentBox
+	{
+		position: relative;
+		display: table;
+		height: 150px;
+		padding: 40px 20px;
+		padding-bottom: 0;
+	}
+	.contentBox .main-heading
+	{
+		padding: 0;
+	}
+	.contentBox .main-heading h4
+	{
+		margin: 0;
+		font-size: 25px;
+		font-weight: 800;
+	}
+	.contentBox .main-heading p
+	{
+		font-size: 15px;
+	}
+	.side-info .heading-info h1
+	{
+		display: inline;
+		font-size: 30px;
+		font-weight: 800;
+	}
+
+}
+
+@media (max-width: 478px)
+{
+	nav ul li a
+	{
+		font-size: 10px;
+	}
+	.button-items a,
+	.button-items i
+	{
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 390px)
+{
+	.side-info .heading-info
+	{
+		padding: 30px;
+	}
+	.contentBox .main-heading h4
+	{
+		margin: 0;
+		font-size: 20px;
+		font-weight: 800;
+	}
+
+}

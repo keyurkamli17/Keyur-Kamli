@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Camping | Template Design</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<div class="mian-section">
+		<div class="container">
+
+			<!-- navbar start -->
+			<div class="nav m-0 pt-3 p-2 d-flex justify-content-between align-items-center">
+				<nav>
+					<ul class="list-unstyled m-0 p-0">
+						<li class="d-inline-block"><a class="text-white" href="" title="">About</a></li>
+						<li class="d-inline-block ml-3"><a class="text-white" href="" title="">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="logo text-white text-center">
+					<h5>Camping</h5>
+				</div>
+				<div class="button-items">
+					<a class="mr-1 text-white" href="#">Sign in</a>
+					<a class="mr-3 text-white" href="#">Sign up</a>
+					<a class="mr-0 text-white" href="#"><i class="fa fa-search"></i></a>
+				</div>
+			</div>
+			<div class="bottom-line pt-1"><div class="border-line"></div></div>
+			<!-- navbar ends -->
+
+			<!-- main-content start -->
+			<div class="contentBox ml-0" style="transition: .5s">
+				<div>
+					<div class="main-heading">
+						<h4>Wonderful Places of <br> The Asia</h4>
+						<p>	Enjoy your vacation on the cool and beautiful <br> places of the aisa</p>
+					</div>
+				</div>
+			</div>	
+			<div class="side-info" style="transition: .5s">
+				<div class="heading-info">
+					<h3>Explore</h3>
+					<h1>Cool View of the asian rocks</h1><br>	
+					<i class="fa fa-arrow-right" id="next"></i>
+				</div>
+				<div class="imgBox">
+					<img src="img/img.jpg" alt="">
+				</div>
+			</div>
+		</div>
+			<div class="container">
+				<div class="package-info">
+					<h6>book your vacation</h6>
+					<div class="contentbox">
+						<div class="place">
+							<i class="fa fa-home"></i>
+							<h2>Himalaya</h2>
+							<p>Mountain of himalaya with cool river</p>
+						</div>
+						<div class="place">
+							<i class="fa fa-bus"></i>
+							<h2>Check in</h2>
+							<p>20-08-2019</p>
+						</div>
+						<div class="place">
+							<i class="fa fa-bus"></i>
+							<h2>Check out</h2>
+							<p>25-08-2019</p>
+						</div>
+						<div class="place">
+							<i class="fa fa-user-o"></i>
+							<h2>Name</h2>
+							<p>Keyur Kamli</p>
+						</div>
+						<button class="btn1" type="submit">Book</button>
+					</div>
+				</div>
+			</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$('#next').click(function(){
+			$('.mian-section').css('background-image',"url(img/img.jpg)");
+		})
+	})
+	</script>		
+</body>
+</html>
