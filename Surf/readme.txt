@@ -2,7 +2,7 @@
 === FRONT-END-DEVELOPMENT ===
 
 Start-Date: 20:45 06-09-2019
-End-Date:
+End-Date: 13:22 10-09-2019
 
 Project-Title: Surf
 
@@ -23,6 +23,6 @@ background-color: left-side --> #fff and right-side --> #1a2f49.
 
 Buttuns: skyblue and color is #fff.
 
-Font-family: 
+Font-family: 'Hind', sans-serif;
 
 
