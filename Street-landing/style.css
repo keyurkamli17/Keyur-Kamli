@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Archivo+Black|Cinzel|Julius+Sans+One|Luckiest+Guy|Monoton|Old+Standard+TT|Quicksand|Roboto&display=swap');
+
+html
+{
+background: #000;
+}
+*
+{
+margin: 0;
+padding: 0;
+font-family: Futura, 'Trebuchet MS', Arial, sans-serif !important;
+box-sizing: border-box;
+}
+.main-section
+{
+position: relative;
+background-image: linear-gradient(rgba(0,0,0,.77),rgba(0,0,0,0.77)),url(img2.jpg);
+background-size: cover;
+height: 100vh;
+background-repeat: no-repeat;
+box-sizing: border-box;
+overflow: hidden;
+animation: scal 3s;
+}
+@keyframes scal
+{
+	0%
+	{
+		transform: scale(0);
+	}
+	100%
+	{
+		transform: scale(1);
+	}
+}
+.bg
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 99.75%;
+	z-index: -1;
+	overflow: hidden;
+}
+.bg img
+{
+	width: 100%;
+	height: 99.75%;
+	object-fit: cover;
+	animation: scale 40s infinite;
+}
+@keyframes scale
+{
+	0%
+	{
+		transform: scale(1);
+	}
+	49%
+	{
+		transform: scale(2);
+	}	
+	100%
+	{
+		transform: scale(1);
+	}
+}
+.layer
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 99.75%;
+	z-index: -1;
+	background: rgba(0,0,0,.79);
+}
+header
+{
+background-image: linear-gradient(rgba(0,0,0,.27),rgba(0,0,0,.27));
+padding-top: 50px;
+padding-bottom: 35px;
+width: 100%;
+height: 60px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-sizing: border-box;
+animation: slide-down .5s;
+}
+@keyframes slide-down
+{
+0%
+{
+transform: scale(0.8);
+}
+100%
+{
+transform: scale(1);
+}
+}
+header .logo
+{
+margin: 0;
+width: 200px;
+height: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+header .logo h5
+{
+font-family: 'Cinzel', serif !important;
+font-size: 18px;
+font-weight: lighter;
+text-transform: uppercase;
+color: #fff;
+z-index: 1;
+cursor: pointer;
+}
+header .logo h5 span
+{
+font-family: 'Cinzel', serif !important;
+text-transform: lowercase;
+letter-spacing: 1px;
+color: #B322DD;
+}
+/* header .logo .line
+{
+transition: 1s;
+transition-delay: .5s;
+transform: translateX(30%);
+position: absolute;
+top: 7%;
+z-index: 1;
+width: 90px;
+height: 1px;
+background: #fff;
+} */
+nav ul
+{
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+nav ul li
+{
+list-style: none;
+text-decoration: none;
+padding: 5px 18px;
+transition: .5s;
+}
+nav ul li:hover,
+nav ul li.active
+{
+	transition: .5s;
+	border-bottom: 1px solid #b322dd;
+}
+nav ul li a
+{
+transition: .5s;
+font-size: 14px;
+color: #fff;
+text-decoration: none;
+letter-spacing: 1.2px;
+font-weight: lighter;
+}
+nav ul li.active a,
+nav ul li:hover a
+{
+transition: .5s;
+color: #B322DD;
+}
+header .search
+{
+position: absolute;
+right: 12%;
+}
+header .info-btn
+{
+transition: .5s;
+margin-right: 50px;
+}
+header .info-btn a
+{
+color: #fff;
+text-decoration: none;
+padding: 5px 25px;
+background: #B322DD;
+border: 1px solid #B322DD;
+letter-spacing: .5px;
+font-size: 12px;
+}
+header .info-btn:hover a
+{
+color: #fff;
+background: transparent;
+transition: .5s;
+border: 2px dotted #fff;
+}
+.section1
+{
+	margin: 50px 0;
+	padding: 0;
+	width: 100%;
+	height: 200px;
+	background: transparent;
+	color: #fff !important;
+	animation: slide-down .5s;
+}
+.section1 .container
+{
+	height: 200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 30%;
+}
+.section1 .content h3
+{
+	text-transform: uppercase;
+	font-size: 11px;
+	letter-spacing: 2px;
+}
+.section1 .content h1
+{
+	margin: 1px 0 4px;
+	text-transform: capitalize;
+	font-size: 40px;
+	font-weight: 900;
+	font-family: fantasy;
+	font-stretch: ultra-condensed;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-shadow: 0px 4px 6px #B322DD;
+}
+.section1 .content h2
+{
+	margin-top: -8px; 
+	text-transform: uppercase;
+	font-size: 11px;
+	letter-spacing: 2px;
+}
+.headerTxt
+{
+	margin-top: -10px;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-bottom: -20px;
+}
+.headerTxt h5
+{
+	text-transform: capitalize;
+	font-weight: 500;
+	font-size: 13px;
+	color: #fff;
+	text-transform: uppercase;
+	word-spacing: 2.5px;
+	letter-spacing: 1px;
+}
+
+.section2
+{
+	position: relative;
+	padding-top: 20px;
+}
+.section2 .container
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.section2 .imgBox
+{
+	overflow: hidden;
+	transition: .5s;
+	margin: 0 5px;
+	width: 160px;
+	height: 250px;
+	border: none;
+	border-bottom: 2px solid #B322DD !important;
+	transition: .5s;
+}
+.section2 .imgBox img
+{
+	margin: 0 0px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: 1s;
+}
+.section2 .imgBox:hover img
+{
+	transition: 1s;
+	transform: scaleX(1.2);
+}
+.section2 .imgBox .overlay h4
+{
+	margin-bottom: 10px;
+	transition: .5s;
+	visibility: visible;
+	transform: translateY(35px);
+}
+
+.section2 .imgBox:hover .overlay h4
+{
+	border-bottom: 1px dotted #fff;
+	transition: .5s;
+	visibility: visible;
+	transform: translateY(5px);
+}
+.section2 .overlay
+{
+	visibility: hidden;
+	position: absolute;
+	transform: translateY(-100.5%);
+	margin: 0 0px;
+	width: 160px;
+	height: 250px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: flex-end;
+	color: #fff !important;
+	font-size: 17px;
+	font-weight: lighter;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: .5s;
+	overflow: hidden;
+}
+.section2 .imgBox:hover .overlay
+{
+	transition: .5s;
+	visibility: visible;
+	background: linear-gradient(180deg,transparent,transparent,#000);
+	border: none;
+	border-bottom: 2px solid #fff;
+}
+
+.section2 .imgBox .overlay .btnD1
+{
+	visibility: hidden;
+	margin-top: 5px;
+	padding: 7px 15px;
+	background-color: #fff;
+	color: #000;
+	font-weight: 500;
+	border-radius: 50px;
+	cursor: pointer;
+	font-size: 10.5px;
+	margin-bottom: 20px;
+	border: none;
+	transition: .5s;
+	transform: translateY(50px);
+	outline: none;
+	z-index: 1;
+}
+.section2 .imgBox:hover .overlay .btnD1
+{
+	outline: none;
+	transition: .5s;
+	visibility: visible;
+	transform: translateY(0px);
+}
+.section2 .imgBox .overlay .btnD1:hover
+{
+	transition: .5s;
+	background: transparent;
+	border: 2px dotted #fff;
+	color: #fff;
+	font-size: 11px;
+}
+.line
+{
+	position: absolute;
+	margin-top: -80px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.dot
+{  
+	width: 200px;
+	height: 1px;
+	background-color: #fff;
+}
