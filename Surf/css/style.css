@@ -1,0 +1,722 @@
+@import url('https://fonts.googleapis.com/css?family=Hind|Nunito+Sans|Roboto|Satisfy&display=swap');
+/*----------------------------------font-family: 'Roboto', sans-serif;
+                                    font-family: 'Satisfy', cursive;
+                                    font-family: 'Hind', sans-serif;
+                                    font-family: 'Nunito Sans', sans-serif;
+-----------------------------------------------------------------------------------------------------------------*/
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.site-loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../img/loader.png) no-repeat center #fff;
+  box-sizing: border-box;
+  animation: mv 2s infinite;
+}  
+
+/*@keyframes mv
+{
+    0%
+    {
+        background-position: left; 
+    }
+    100%
+    {
+        background-position:right; 
+    }
+}*/
+
+li
+{
+    list-style: none;
+    text-decoration: none;
+}
+
+.web_page
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.web_page .left_menu
+{
+    width: 75px;
+    height: 99.9vh;
+    float: left;
+    border-right: .5px solid #f0f0f0;
+}
+
+.web_page .left_menu .toggle_menu
+{
+    width: 75px;
+    height: 75px;
+    font-size: 30px;
+    color: #1a2f49;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .5px solid #f0f0f0;
+}
+
+.web_page .left_menu .toggle_menu #toggle
+{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    color: #1a2f49;
+    font-size: 30px;
+    text-align: center;
+    transition: all .2s linear;
+    animation: fly .1s ease-in-out;
+}
+    #toggle:before
+    {
+        content: 'filter_list';
+        transition: all .2s linear;
+        animation: fly .2s ease-in-out;
+    }
+    #toggle.active:before
+    {
+        content: 'close';
+        transition: all .2s linear;
+        animation: fly .2s ease-in-out;
+    }
+
+.web_page .left_menu nav
+{
+    width: 75px;
+    height: calc(100% - 75px);
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    transition: all .2s linear;
+    visibility: hidden;
+    animation: flly .5s ease-in-out;
+}
+
+.web_page .left_menu nav.active,.menu_hover.active
+{
+    visibility: visible;
+    transition: all .1s linear;
+    animation: fly .5s ease-in-out;
+}
+
+.web_page .left_menu nav ul li
+{
+    position: relative;
+    transform: rotate(-90deg);
+    margin: 100px;
+    transition: all .2s linear;
+}
+
+.web_page .left_menu nav ul li a
+{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1a2f49;
+    font-size: 10.5px;
+    letter-spacing: 1.5px;
+    font-family: 'Hind', sans-serif;
+    font-weight: bolder;
+}
+
+.menu_hover
+{
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: calc(100% - 76px);
+    transition: all .2s linear;
+    visibility: hidden;
+    border-right: .5px solid #f0f0f0;
+    animation: flly .5s ease-in-out;
+}
+
+.menu_hover .line
+{
+    position: relative;
+    width: 2px;
+    height: 39px;
+    background: #1a2f49;
+    transform: translateY(173px);
+    border-radius: .9rem;
+    transition: all .2s linear;
+}
+
+
+@keyframes flly
+{
+    0%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+@keyframes fly
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+.box1
+{
+    width: 300px;
+    height: 99.99vh;
+    margin-left: 75px;
+    float: left;
+    position: absolute;
+}
+
+.box1 .logo
+{
+    width: 150px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.box1 .logo a 
+{
+    outline: none !important;
+}
+
+.box1 .logo img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(.7);
+}           
+
+.contentbox1
+{   
+    position: relative;
+    box-sizing: border-box;
+}
+
+.contentbox1 .title
+{
+    position: relative;
+    width: 400px;
+    height: auto;
+    margin: 80px 0 30px;
+}
+
+.contentbox1 .title h5
+{
+    font-size: 56.3px;
+    font-weight: 800;
+    color: #1a2f49;
+    font-family: arial;
+    word-spacing: 3.2px;
+    line-height: 60px;;
+}
+
+.contentbox1 .line1
+{
+    width: 55px;
+    height: 2px;
+    background-color: #1a2f49;
+}
+
+.contentbox1 .content1
+{
+    margin: 30px 0 30px;
+}
+
+.contentbox1 .content1 p
+{
+    box-sizing: border-box;
+    padding-right: 20px;
+    font-family: 'Hind', sans-serif;
+    font-size: 14px;
+    color: #1a2f49;
+    text-align: justify;
+    line-height: 22px;
+}
+
+.contentbox1 .mainbtn button
+{
+    width: 400px;
+    height: 60px;
+    border-radius: 40px;
+    font-family: 'Hind', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #4CD2EA;  
+    border: none;
+    outline: none;
+    box-shadow: 26px  20px 30px 0px rgba(0,0,0,.25);
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all .5s;
+}
+
+#arrow
+{
+    position: absolute;
+    margin: -4px 10px;
+    font-size: 25px;
+}
+
+.contentbox1 .mainbtn button:hover
+{
+    transform: translateX(10px);
+    transition: all .5s;
+    box-shadow: 26px  20px 30px 0px rgba(0,0,0,.3);
+}
+
+.contentbox1 .mentors
+{
+    margin-top: 65px;
+    margin-right: 10px;
+}
+
+.contentbox1 .mentors h4
+{
+    font-size: 20px;
+    color: #1a2f49;
+    font-family: 'Hind', sans-serif;
+    margin-left: 10px;
+}
+
+.contentbox1 .mentors ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.contentbox1 .mentors ul li 
+{
+    list-style: none;
+    display: inline-block;
+    margin: 12px 6px;
+}
+.contentbox1 .mentors ul li a
+{
+    text-decoration: none;
+    font-size: 14px;
+    color: #1a2f49;
+    font-family: 'Hind', sans-serif;
+}
+
+.contentbox1 .mentors ul li:nth-child(1)
+{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+
+ .contentbox1 .mentors ul li img
+ {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+ }
+
+ .box2
+ {
+    box-sizing: border-box;
+    width: calc(100% - 375px);
+    height: 100vh;
+    margin-left: 375px;
+    background-color: #1a2f49;
+    overflow: hidden;
+ }
+
+ @media (max-height: 735px)
+ {
+    .box2
+    {
+        height: 750px;
+    }    
+ }
+
+.box2 .ntfBox .notification 
+{
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.box2 .ntfBox .notification ul 
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 23px;
+}
+
+.box2 .ntfBox .notification ul li:nth-child(1)
+{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;   
+}
+
+.box2 .ntfBox .notification img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;   
+}
+
+.box2 .ntfBox .notification ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 8px;
+}
+
+.box2 .ntfBox .notification ul li a
+{
+    font-size: 12px;
+    font-family: 'Hind', sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+.box2 .ntfBox .notification ul li:nth-child(3), a i
+{
+    font-size: 19px !important;
+    margin-top: 5px;
+}
+
+.box2 .ntfBox .expand_more
+{
+    visibility: hidden;
+    position: absolute;
+    top: 65px;
+    right: 30px;
+    width: 160px;
+    box-sizing: border-box;
+    padding: 1px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 15px 30px rgb(0,0,0,.3);
+    z-index: 1000000;
+}
+
+.box2 .ntfBox .expand_more.active
+{
+    visibility: visible;
+    animation: visible .5s ease-in-out;  
+}
+
+@keyframes visible
+{
+    0%
+    {
+        transform: translateY(-5px);
+    }
+    100%
+    {
+        transform: translateY(0);
+    }
+}
+
+.box2 .ntfBox .expand_more ul
+{
+    display: block;
+    box-sizing: border-box;
+}
+
+.box2 .ntfBox .expand_more ul li:nth-child(1)
+{
+    border-radius: 0;
+}
+
+.box2 .ntfBox .expand_more ul li
+{   
+    margin: 7px;
+    box-sizing: border-box;
+}
+
+#list_icon
+{
+    font-size: 16px;
+    position: absolute;
+    right: 10px;
+    margin-top: 3px;
+    color: #1a2f49;
+}
+
+.box2 .ntfBox .expand_more ul li a
+{
+    text-decoration: none;
+    font-size: 12px;
+    font-family: "Hind", sans-serif;
+    color: #1a2f49;
+}
+
+.noti
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    color: #fff;
+    width: 13px;
+    height: 13px;
+    background-color: red; 
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 26px;
+    font-family: "Roboto", sans-serif;
+}
+
+.ListBox
+{
+    margin-top: 90px;
+    position: relative;
+    width: 1280px;
+    height: auto;
+    margin-left: 230px;
+    overflow: hidden;
+}
+
+.ListBox ul
+{
+    display: flex;
+    overflow: hidden;
+}
+
+.ListBox ul li
+{
+    list-style: none;
+    position: relative;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.ListBox .list_items
+{
+    position: relative;
+    transition: .5s;
+}
+
+.indicators
+{
+    position: absolute;
+    top: 650px;
+    margin-left: 250px;
+    width: 60px;
+    display: flex;
+}   
+
+.indicators .prev
+{
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.indicators .prev.active
+{
+    transition: .2s;
+    font-size: 20px;
+    color: #fff;
+    opacity: .4;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.indicators .next
+{
+    font-size: 20px;
+    color: #fff;
+    opacity: .4;
+    position: absolute;
+    right: 0;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.indicators .next.active
+{
+    font-size: 35px;
+    color: #fff;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    margin-top: 0px;
+    cursor: pointer;
+    transition: all .2s;      
+}
+
+.ListBox .imgBox
+{
+    border-radius: 3px;
+    width: 250px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    z-index: 10000;
+    box-shadow: 2px 0px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ListBox .imgBox:hover img
+{
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+.ListBox .imgBox:hover .f_info img
+
+{
+    transform: scale(1);
+}
+
+.ListBox .imgBox img
+{
+    width: 250px;
+    height: 450px;
+    object-fit: cover;
+    position: absolute;
+    transition: .5s;
+}
+
+.ListBox .imgBox .overlay
+{
+    width: 250px;
+    height: 450px;
+    position: relative;
+    background: linear-gradient(180deg,#1a2f49,transparent,#1a2f49);
+    transition: all .5s;
+}
+
+.ListBox .imgBox .overlay .h_info
+{
+    position: relative;
+    padding: 25px;
+}
+
+.ListBox .imgBox .overlay .h_info h1
+{
+    font-weight: lighter;
+    font-size: 16px;
+    color: #fff;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.ListBox .imgBox .overlay .h_info h6
+{
+    margin-top: 5px;
+    font-weight: lighter;
+    font-size: 10px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    text-transform: lowercase;
+}
+
+.ListBox .imgBox .overlay .f_info
+{
+    position: absolute;
+    display: block;
+    bottom: 0;
+    margin: 25px;
+}
+
+.ListBox .imgBox .overlay .f_info h3
+{
+    font-size: 20px;
+    color: #fff;
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+}
+
+.ListBox .imgBox .overlay .f_info .line2
+{
+    width: 40px;
+    height: 1px;
+    background: #fff;
+    margin: 15px 0 15px;
+}
+
+.ListBox .imgBox .overlay .f_info ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ListBox .imgBox .overlay .f_info img
+{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid #fff;
+    padding: 2px;
+}
+
+.ListBox .list_items .imgBox .overlay .f_info ul li
+{
+    margin: 0;
+    padding: 0;
+}
+
+.ListBox .list_items .imgBox .overlay .f_info ul li:nth-child(1)
+{
+    margin-left: 0;
+}
+
+.ListBox .imgBox .overlay .f_info ul li:nth-child(2)
+{
+    margin-top: -15px;
+    margin-left: 10px;
+}
+
+.ListBox .imgBox .overlay .f_info ul li:nth-child(3)
+{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 42px;
+}
+.ListBox .imgBox .overlay .f_info ul li:nth-child(2) a
+{
+    font-size: 12px;
+}
+.ListBox .imgBox .overlay .f_info ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 11px;
+    font-family: "Hind", sans-serif;
+}
