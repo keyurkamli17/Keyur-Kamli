@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Application -JS</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container_main">
+      <div class="controls">
+        <i class="medium material-icons">assignment</i>
+        <h1>Todo List</h1>
+        <input
+          type="text"
+          id="input"
+          placeholder="ex.meeting.photoshoot.etc  "
+        />
+        <i onclick="newTask()" class="tiny material-icons">add</i><br />
+        <span id="span">Enter your Todo!</span>
+      </div>
+      <div>
+        <ul id="list">
+          <li>Go to Gym</li>
+          <li class="checked">Meeting at 12:00PM</li>
+          <li>Learn JS</li>
+          <li>Collect Document</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="script.js  "></script>
+</html>
