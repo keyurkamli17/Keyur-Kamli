@@ -1,1 +1,232 @@
-
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Login-Page | HTML & CSS</title>
+		<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+		<style>
+		body{
+		margin: 0;
+		padding: 0;
+		background-image: -webkit-linear-gradient(to right, #c04848, #480048);
+		background-image: linear-gradient(to right, #c04848, #480048);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		}
+		.loginbox{
+		background-image: -webkit-linear-gradient(to right, #c04848, #480048);
+		background-image: linear-gradient(to right, #c04848, #480048);
+		width: 200px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 100px;
+		-webkit-box-shadow: 10px 20px 50px rgb(0,0,0,.5);
+		-moz-box-shadow: 10px 20px 50px rgb(0,0,0,.5);
+		box-shadow: 10px 20px 50px rgb(0,0,0,.5);
+		border-radius: 2%;
+		text-align: center;
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition:    all .5s ease-in-out;
+		-o-transition:      all .5s ease-in-out;
+		-ms-transition:     all .5s ease-in-out;
+		transition:         all .5s ease-in-out;
+		-webkit-animation: fade 1s ease-in;
+		animation: fade 1s ease-in;
+		}
+		.loginbox:hover
+		{
+		box-shadow: 10px 20px 50px rgb(0,0,0,.8);
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition:    all .5s ease-in-out;
+		-o-transition:      all .5s ease-in-out;
+		-ms-transition:     all .5s ease-in-out;
+		transition:         all .5s ease-in-out;
+		}
+		@-webkit-keyframes fade {
+		0%{
+		opacity: 0;
+		transform: scale(0.7);
+		}
+		100%{
+		opacity: 1;
+		transform: scale(1.0);
+		}
+		}
+		@keyframes fade {
+		0%{
+		opacity: 0;
+		transform: scale(0.7);
+		}
+		100%{
+		opacity: 1;
+		transform: scale(1.0);
+		}
+		}
+		h5
+		{
+		margin-top: -20px;
+		padding-top: -20px;
+		font-size: 20px;
+		color: #ccc;
+		font-family: 'Raleway', sans-serif;
+		text-shadow: 0 2px 5px rgb(0,0,0,.8);
+		}
+		input{
+		background: #ccc;
+		color: #000;
+		width: 200px;
+		padding: 20px;
+		border: 0;
+		outline: 0 !important;
+		cursor: pointer;
+		font-family: 'Raleway', sans-serif;
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition:    all .5s ease-in-out;
+		-o-transition:      all .5s ease-in-out;
+		-ms-transition:     all .5s ease-in-out;
+		transition:         all .5s ease-in-out;
+		}
+		input:hover
+		{
+		color: #ccc;
+		background: #480048;
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition:    all .5s ease-in-out;
+		-o-transition:      all .5s ease-in-out;
+		-ms-transition:     all .5s ease-in-out;
+		transition:         all .5s ease-in-out;
+		}
+		li:nth-child(1) {
+		background: #480048;
+		padding-top: 10px;
+		padding-right: 10px;
+		padding-left: 10px;
+		}
+		li:nth-child(2) {
+		background: #c04848;
+		padding-bottom: 10px;
+		padding-right: 10px;
+		padding-left: 10px;
+		}
+		button{
+		font-family: 'Raleway', sans-serif;
+		margin-top: 15px;
+		padding: 15px;
+		width: 100%;
+		background-image: -webkit-linear-gradient(to right, #c04848, #480048);
+		background-image: linear-gradient(to right, #c04848, #480048);
+		color: #ccc;
+		border: 0;
+		-webkit-box-shadow: 0 0 10px rgb(0,0,0,.5);
+		-moz-box-shadow: 0 0 10px rgb(0,0,0,.5);
+		box-shadow: 0 0 10px rgb(0,0,0,.5);
+		overflow: hidden;
+		outline: 0;
+		cursor: pointer;
+		border-radius: 5px;
+		}
+		button:hover{
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition:    all .5s ease-in-out;
+		-o-transition:      all .5s ease-in-out;
+		-ms-transition:     all .5s ease-in-out;
+		transition:         all .5s ease-in-out;
+		background-image: -webkit-linear-gradient(to right, #480048, #c04848);
+		background-image: linear-gradient(to right, #480048, #c04848);
+		}
+		ul
+		{
+		margin: 0;
+		padding: 0;
+		-webkit-box-shadow: 0 0 15px #480048;
+		-moz-box-shadow: 0 0 15px #480048;
+		box-shadow: 0 0 15px #480048;
+		}
+		.loginbox ul li
+		{
+		list-style: none;
+		}
+		#error{
+		text-shadow: 0 2px 5px #000;
+		color: #fff;
+		font-family: 'Raleway', sans-serif;
+		font-size: 12px;
+		transition: 1s;
+		letter-spacing: 1px;
+		-webkit-animation: flow 2s ease-in-out;
+				animation: flow 2s ease-in-out;
+		}
+		@-webkit-keyframes flow {
+			0%{
+				opacity: 0;
+				transform: scale(0.8);
+			}
+			50%{
+				opacity: 1;
+				transform: scale(1.0);
+			}
+			75%{
+				opacity: 0;
+				transform: scale(0.8);
+			}
+			100%{
+				opacity: 1;
+				transform: scale(1.0);
+			}
+		}
+		@keyframes flow {
+			0%{
+				opacity: 0;
+				transform: scale(0.8);
+			}
+			50%{
+				opacity: 1;
+				transform: scale(1.0);
+			}
+			75%{
+				opacity: 0;
+				transform: scale(0.8);
+			}
+			100%{
+				opacity: 1;
+				transform: scale(1.0);
+			}
+		}
+		</style>
+	</head>
+	<body>
+		<div class="loginbox">
+			<div>
+				<h5>Login</h5>
+				<div class="formbox">
+					<form method="post">
+						<ul>
+							<li><input name="name" type="text" placeholder="ex.username"></li>
+							<li><input name="pass" id="li1" type="password" placeholder="ex.password"></li>
+						</ul>
+						<button name="login">Login</button><br><br>
+						<span id="error">wrong username or password</span>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			setTimeout(() => {
+				document.getElementById('error').style.opacity = '0';
+			}, 4000)
+		// document.getElementById("li1").addEventListener("mouseover", mouseOver);
+		// document.getElementById("li1").addEventListener("mouseout", mouseOut);
+		// function mouseOver() {
+		//   document.getElementById("li1").style.background = "#c04848";
+		// }
+		// function mouseOut() {
+		//   document.getElementById("li1").style.background = "#ccc";
+		// }
+		</script>
+		</script>
+	</body>
+</html>
